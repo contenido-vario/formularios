@@ -427,10 +427,35 @@
    <h3>Ver todos lo referente a formularios y sus atributos así como los atributos de los campos de formulario <a
          href="https://www.w3schools.com/html/html_forms.asp" target="_blank" rel="noopener"><button>aquí</button></a>
    </h3>
+   <hr>
+   <h2 class="verde">¿Cómo leer los valores de los controles en JavaScript?</h2>
+   <blockquote>
+      <p class="mb">Para preguntar si está marcado un checkmark se utiliza el atributo <code>checked</code>.<br>
+         Supongamos que tenemos un control con <code>id = "esAlergico"</code></p>
+      <p class="mb">Ejemplo:</p>
+      <p class="mb"><code>
+         &lt;p&gt;<br>
+         &nbsp;&nbsp;&lt;label for="esAlergico"&gt;¿Sufre de alergia?  &lt;/label&gt;<br>
+         &nbsp;&nbsp;&lt;input id="esAlergico" type="checkbox" checked&gt;<br>
+      &lt;/p&gt;
+      </code></p>
+      <p class="mb">En <strong>JavaScript</strong>, para leer si el control está seleccionado o no, 
+      se colocaría:</p>
+      <p class="mb"><code>
+         //1. Mapear el HTML<br>
+         const ALERGICO = document.getElementById("esAlergico");<br><br>
+         
+         //2. <strong>Dentro de la función que revisa el valor del control</strong><br>
+         ...<br>
+         let tieneAlergias = ALERGICO.checked;<br>
+      </code></p><br>
+      <p class="mb"><mark>Todo el resto de controles verifican su valor con el atributo <strong><code>value</code></strong></mark></p>
+
+   </blockquote>
 
    <div id="mensaje">
       ¡Código HTML en el portapapeles!<br><code>Ctrl-V</code> para pegar el código en tu archivo.
-    </div>
+   </div>
     
 
    <script src="./js/clip.js"></script>
