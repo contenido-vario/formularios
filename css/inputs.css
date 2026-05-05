@@ -118,6 +118,17 @@ pre {
   background-color: white;
   font-size: 60%;
 }
+.mb {
+  margin-bottom: 5px;
+}
+
+code {
+  color: rgb(10, 156, 22);
+}
+
+.verde {
+  background-color: rgb(8, 214, 87);
+}
 
 #mensaje {
   display: none; /* Inicialmente oculto */
